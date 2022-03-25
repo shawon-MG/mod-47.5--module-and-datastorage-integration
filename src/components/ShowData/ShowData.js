@@ -1,9 +1,12 @@
 import React from 'react';
+import { added } from '../../utilities/storage';
 
 const ShowData = (props) => {
     const {id, eyeColor, name, gender} = props.shops;
 
-    const addId = (id) => console.log(id);
+    const addId = (id) => {
+        added(id);
+    }
 
     return (
         <div style={{padding: '15px', margin: '20px', borderRadius: '20px', border: '1px solid black'}}>
